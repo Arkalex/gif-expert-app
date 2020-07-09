@@ -1,7 +1,6 @@
 import React from 'react'
 import { GifGridItem } from './GifGridItem';
 import { useFetchGifs } from '../hooks/useFetchGifs';
-//import { getGifs } from '../helpers/getGifs';
 
 export const GifGrid = ({ category }) => {
 
@@ -10,7 +9,7 @@ export const GifGrid = ({ category }) => {
 
     return (
         <>
-            <h3>{category}</h3>
+            <h3 className="animate_animated animate_fadeIn">{category}</h3>
             
             { loading && <p>Loading</p> }
 
