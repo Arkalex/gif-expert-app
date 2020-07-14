@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el <GifGrid /> should show correctly 1`] = `
+<Fragment>
+  <h3
+    className="animate_animated animate_fadeIn"
+  >
+    Goku
+  </h3>
+  <p>
+    Loading
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en el <GifGrid /> should show items when img loaded with useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="animate_animated animate_fadeIn"
+  >
+    Goku
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="random"
+      url="https:localhost"
+    />
+  </div>
+</Fragment>
+`;
