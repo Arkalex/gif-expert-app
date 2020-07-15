@@ -9,4 +9,13 @@ describe('Pruebas en <GifExpertApp />', () => {
         expect( wrapper ).toMatchSnapshot();
     })
     
+    test('should show a list of categories', () => {
+        const categories = ['Dragon Ball', 'Kimetsu no Yaiba'];
+        const wrapper = shallow(<GifExpertApp defaultCategories={categories} />);
+
+
+        expect( wrapper ).toMatchSnapshot();
+        expect( wrapper.find('GifGrid').length ).toBe(categories.length);
+    })
+    
 })
